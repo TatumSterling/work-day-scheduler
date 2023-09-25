@@ -32,7 +32,7 @@ $(function () {
 
 saveBtn.on("click", saveUserInput);
 
-//sets local storage key value pairs
+//sets local storage key value pairs for each textarea element
 function saveUserInput () {
 
   $("textarea").each(function() {
@@ -44,6 +44,8 @@ function saveUserInput () {
 }
 
 //loops through index 9-17 and gets user input for each
+// using the hour9-hour17 ID tags and stores them 
+// in an object
 var hours = {};
 
 
